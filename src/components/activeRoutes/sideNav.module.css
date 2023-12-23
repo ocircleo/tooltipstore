@@ -1,0 +1,18 @@
+.active {
+  background-color: rgb(35, 40, 50);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+.pending {
+  background-color: rgb(35, 40, 50);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+.default {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
