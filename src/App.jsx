@@ -6,19 +6,19 @@ function App() {
   const urls = [
     {
       link: "/",
-      title: "Home"
-    }, {
-      link: "/apps",
       title: "Apps"
     }, {
       link: "/games",
       title: "Games"
     }, {
-      link: "/discounts",
-      title: "Discounts"
+      link: "/events",
+      title: "Events"
     }, {
       link: "/about",
       title: "About"
+    }, {
+      link: "/contact",
+      title: "Contact"
     }
   ]
   return (

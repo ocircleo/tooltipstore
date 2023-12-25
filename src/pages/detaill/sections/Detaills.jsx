@@ -1,10 +1,8 @@
 import React from 'react';
-import Comments from './sections/Comments';
-import PostAComment from './sections/PostAComment';
 
-const Detaill = () => {
+const DetaillText = () => {
     return (
-        <div className='p-5 w-full md:w-4/6 mx-auto'>
+        <>
             <div className='flex gap-5  pb-5'>
                 <img src="" alt="" className='h-16 w-16 rounded bg-gray-300' />
                 <div>
@@ -32,10 +30,8 @@ const Detaill = () => {
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos sequi itaque voluptate error delectus, a quam, ut, animi temporibus praesentium quisquam eveniet nulla possimus qui nobis deleniti omnis? Eius minima libero modi facere! Provident deserunt, illum possimus libero repellat obcaecati eveniet, ut distinctio blanditiis, maxime similique voluptates cupiditate numquam?
             </p>
-            <Comments></Comments>
-            <PostAComment></PostAComment>
-        </div>
+        </>
     );
 };
 
-export default Detaill;
+export default DetaillText;
