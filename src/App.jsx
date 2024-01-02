@@ -19,6 +19,9 @@ function App() {
     }, {
       link: "/contact",
       title: "Contact"
+    }, {
+      link: "/profile",
+      title: "Dashboard"
     }
   ]
   return (
