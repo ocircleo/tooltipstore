@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Button from '../../components/buttons/Button';
 import { Link } from 'react-router-dom';
+import toTop from '../../hooks/toTop';
 
 const Login = () => {
     const [show, setShow] = useState(false);
     const [loading, setLoading] = useState("Login")
+    toTop();
     const emailLogin = (e) => {
         e.preventDefault();
         setLoading("please wait...");

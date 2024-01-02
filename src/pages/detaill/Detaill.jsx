@@ -1,8 +1,10 @@
 import React from 'react';
 import Comments from './sections/Comments';
 import PostAComment from './sections/PostAComment';
+import toTop from '../../hooks/toTop';
 
 const Detaill = () => {
+    toTop();
     return (
         <div className='p-5 w-full md:w-4/6 mx-auto'>
             <div className='flex gap-5  pb-5'>

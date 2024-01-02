@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import Button from '../../components/buttons/Button';
 import { Link } from 'react-router-dom';
+import toTop from '../../hooks/toTop';
 
 const Register = () => {
     const [show, setShow] = useState(false);
     const [loading, setLoading] = useState("Register")
+    toTop();
     const emailRegister = (e) => {
         e.preventDefault();
         setLoading("please wait...")
         setTimeout(() => setLoading("Creating your account..."), 4 * 1000)
         setTimeout(() => setLoading("Processing ..."), 7 * 1000)
         setTimeout(() => setLoading("Almost there..."), 10 * 1000)
-        
+
     }
     return (
         <div className='w-full mt-4 px-2'>
@@ -27,7 +29,7 @@ const Register = () => {
                     <label htmlFor="password">Enter Password</label>
                     <input type={show ? "text" : "password"} name="password" id="password" className='border-2 px-3 py-2 rounded border-blue-500 bg-white' required />
                 </fieldset>
-              
+
                 <fieldset className='flex items-center gap-2 ' >
                     <input onClick={() => setShow(!show)} type="checkbox" name="showPassword" id="showPassword" checked={show ? true : false} className='cursor-pointer h-4 w-4' />
                     <p onClick={() => setShow(!show)} className='select-none cursor-pointer'>Show Password</p>
